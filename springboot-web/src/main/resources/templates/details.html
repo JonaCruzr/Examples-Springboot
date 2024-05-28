@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- las etiquetas/atributos que comienzan con'th' pertenecen a Thymeleaf y son las que se utilizan-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> <!-- Definición del espacio de nombres 'th' para Thymeleaf -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}"></title>
+</head>
+<body>
+    <h1 th:text="${title}"></h1>
+    <ul>
+        <li th:text="${user.name}"></li>
+        <li th:text="${user.lastname}"></li>
+    </ul>
+</body>
+</html>
